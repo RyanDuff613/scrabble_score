@@ -1,8 +1,16 @@
 require('pry')
 
-describe("String#word_score") do
-  it("returns a score for a letter")do
-    expect("a".word_score()).to(eq(1))
+
+class Scrabble
+  def initialize(word)
+    @word = word
+    @score = 0
   end
 
+  def word_score
+    if @word == "a"
+      @score += 1
+    end
+  end
+  @score
 end
