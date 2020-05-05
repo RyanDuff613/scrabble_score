@@ -5,6 +5,7 @@ class Scrabble
   def initialize(word)
     @word = word
     @score = 0
+    puts "word is #{@word}"
   end
 
   def word_score
