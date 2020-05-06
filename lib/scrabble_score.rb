@@ -1,17 +1,15 @@
 require('pry')
 
 
-class Scrabble
-  def initialize(word)
-    @word = word
-    @score = 0
-    puts "word is #{@word}"
-  end
-
+class Scrabbleword
+  
   def word_score
-    if @word == "a"
-      @score += 1
+    word_letters = @word.split()
+    word_letters.each do |letter|
+      if letter == "a"
+        @score += 1
+      end
     end
+    @score
   end
-  @score
 end
