@@ -8,6 +8,6 @@ describe("Scrabbleword#word_score") do
   end
 
   it("returns a score of 1 for every a,e,i,o,u,l,n,r,s or t in a word") do
-    expect(Scrabbleword.new("lien").word_score()).to(eq(4))
+    expect(Scrabbleword.new("ae").word_score()).to(eq(2))
   end
 end

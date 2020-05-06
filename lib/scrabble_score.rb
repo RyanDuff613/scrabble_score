@@ -9,8 +9,11 @@ class Scrabbleword
 
   def word_score
     @word_letters.each do |word_letter|
-      if (word_letter == "a") | (word_letter == "e") | (word_letter == "i") | (word_letter == "o") | (word_letter == "u") | (word_letter == "l") | (word_letter == "n") | (word_letter == "r") | (word_letter == "s") | (word_letter == "t")
+      if word_letter == "a" 
         @score += 1
+      elsif word_letter == "e"
+        @score += 1
+      else
       end
     end
     @score
